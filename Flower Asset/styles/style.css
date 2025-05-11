@@ -1,0 +1,20 @@
+.header {
+    background-color: rgba(229, 84, 115, 0.1);
+    border: 1px solid tomato;
+    display: flex;
+}
+
+.header-title {
+    color: rgb(39, 39, 39);
+    font-family: Lato;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 96px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.header img {
+    width: 50%;
+    border: 1px solid aqua;
+}
