@@ -9,7 +9,7 @@
 
 
 .header {
-    width: 1366px;
+    width: 100%;
     height: 612px;
     background-color: rgba(229, 84, 115, 0.1);
 
@@ -21,7 +21,6 @@
 .header-container {
     width: 508px;
     height: 364px;
-    /* margin: 185px 960px 135px 230px; */
     margin-left: 230px;
 
 }
@@ -36,16 +35,7 @@
     text-align: left;
 }
 
-.header-description {
-    color: rgba(39, 39, 39, 0.6);
-    font-family: Lato;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 21.5px;
-    letter-spacing: 0%;
-    text-align: left;
-    margin-bottom: 28px;
-}
+
 
 /*shared styles*/
 .primary-button {
@@ -64,8 +54,238 @@
     text-align: center;
 }
 
+.shared-title {
+    color: rgb(39, 39, 39);
+    font-family: Lato;
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 34.5px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.shared-description {
+    color: rgba(39, 39, 39, 0.6);
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21.5px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 28px;
+}
+
+
+
+
+/*..............*/
+
 .header img {
     width: 457px;
     height: 576px;
     margin-right: 240px;
+}
+
+.featured-flowers {
+    margin-bottom: 160px;
+}
+
+
+.featured-flowers>p {
+    text-align: center;
+
+}
+
+.flower-card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flower-card {
+    width: 335px;
+    height: 387.36px;
+
+}
+
+
+
+.flower-card-link {
+    color: rgb(39, 39, 39);
+    font-family: Lato;
+    font-size: 17.28px;
+    font-weight: 700;
+    line-height: 25.2px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+#flower-image-bg1 {
+    width: 334.08px;
+    height: 387.36px;
+    border-radius: 216px 216px 0px 0px;
+
+    background: rgba(167, 33, 98, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flower-image-bg2 {
+    width: 334.08px;
+    height: 387.36px;
+    border-radius: 216px 216px 0px 0px;
+
+    background: rgba(5, 151, 160, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flower-image-bg3 {
+    width: 334.08px;
+    height: 387.36px;
+    border-radius: 216px 216px 0px 0px;
+
+    background: rgba(71, 125, 17, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flower-img1 {
+    width: 223px;
+    height: 309px;
+}
+
+#flower-img2 {
+    width: 266px;
+    height: 266px;
+}
+
+#flower-img3 {
+    width: 223px;
+    height: 309px;
+}
+
+.service {
+    width: 1036px;
+    height: 230px;
+    margin: 0 auto;
+    border-radius: 8px;
+
+    background: rgba(39, 39, 39, 0.05);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 576px) {
+
+
+
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .header-container {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .header-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .shared-description {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .header img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        max-width: 320px;
+    }
+
+    .featured-flowers {
+        padding: 0 15px;
+        margin-bottom: 60px;
+    }
+
+    .flower-card-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flower-card {
+        width: 100%;
+        height: auto;
+        max-width: 335px;
+        margin: 0 auto;
+        /* margin-bottom: 50px; */
+    }
+
+    #flower-image-bg1,
+    #flower-image-bg2,
+    #flower-image-bg3 {
+        width: 100%;
+        max-width: 334px;
+        height: 300px;
+        padding: 30px 0;
+        margin-bottom: 20px;
+        border-radius: 216px 216px 0 0;
+
+
+    }
+
+    #flower-img1,
+    #flower-img2,
+    #flower-img3 {
+        width: 60%;
+        height: auto;
+    }
+
+    .flower-card-link {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .service {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .service-container {
+        width: 100%;
+    }
+
+    .primary-button {
+        width: 100%;
+        max-width: 200px;
+        margin: 10px auto;
+    }
 }
