@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-
-
 * {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-
 
 .header {
     width: 100%;
     height: 612px;
     background-color: rgba(229, 84, 115, 0.1);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +19,6 @@
     width: 508px;
     height: 364px;
     margin-left: 230px;
-
 }
 
 .header-title {
@@ -31,26 +27,20 @@
     font-size: 56px;
     font-weight: 800;
     line-height: 64px;
-    letter-spacing: 0%;
     text-align: left;
 }
 
-
-
-/*shared styles*/
 .primary-button {
     width: 165px;
     height: 58px;
     border-radius: 5px;
-
     background: rgb(229, 84, 115);
-    border-style: none;
-    color: rgb(255, 255, 255);
+    border: none;
+    color: white;
     font-family: Lato;
     font-size: 14.4px;
     font-weight: 700;
-    line-height: 17.30px;
-    letter-spacing: 0%;
+    line-height: 17.3px;
     text-align: center;
 }
 
@@ -60,7 +50,6 @@
     font-size: 29px;
     font-weight: 800;
     line-height: 34.5px;
-    letter-spacing: 0%;
     text-align: center;
 }
 
@@ -70,15 +59,8 @@
     font-size: 13px;
     font-weight: 400;
     line-height: 21.5px;
-    letter-spacing: 0%;
-    text-align: left;
     margin-bottom: 28px;
 }
-
-
-
-
-/*..............*/
 
 .header img {
     width: 457px;
@@ -90,10 +72,8 @@
     margin-bottom: 160px;
 }
 
-
 .featured-flowers>p {
     text-align: center;
-
 }
 
 .flower-card-container {
@@ -106,10 +86,7 @@
 .flower-card {
     width: 335px;
     height: 387.36px;
-
 }
-
-
 
 .flower-card-link {
     color: rgb(39, 39, 39);
@@ -117,45 +94,35 @@
     font-size: 17.28px;
     font-weight: 700;
     line-height: 25.2px;
-    letter-spacing: 0%;
     text-align: center;
-    text-decoration-line: underline;
+    text-decoration: underline;
 }
 
-#flower-image-bg1 {
-    width: 334.08px;
-    height: 387.36px;
-    border-radius: 216px 216px 0px 0px;
-
-    background: rgba(167, 33, 98, 0.15);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#flower-image-bg2 {
-    width: 334.08px;
-    height: 387.36px;
-    border-radius: 216px 216px 0px 0px;
-
-    background: rgba(5, 151, 160, 0.15);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+#flower-image-bg1,
+#flower-image-bg2,
 #flower-image-bg3 {
     width: 334.08px;
     height: 387.36px;
     border-radius: 216px 216px 0px 0px;
-
-    background: rgba(71, 125, 17, 0.15);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#flower-img1 {
+#flower-image-bg1 {
+    background: rgba(167, 33, 98, 0.15);
+}
+
+#flower-image-bg2 {
+    background: rgba(5, 151, 160, 0.15);
+}
+
+#flower-image-bg3 {
+    background: rgba(71, 125, 17, 0.15);
+}
+
+#flower-img1,
+#flower-img3 {
     width: 223px;
     height: 309px;
 }
@@ -165,17 +132,12 @@
     height: 266px;
 }
 
-#flower-img3 {
-    width: 223px;
-    height: 309px;
-}
-
 .service {
-    width: 1036px;
+    width: 100%;
+    max-width: 1036px;
     height: 230px;
-    margin: 0 auto;
+    margin: 0 auto 93px;
     border-radius: 8px;
-
     background: rgba(39, 39, 39, 0.05);
     display: flex;
     justify-content: space-around;
@@ -189,11 +151,34 @@
     align-items: center;
 }
 
+.deal {
+    width: 100%;
+    height: 445px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(229, 84, 115, 0.05);
+}
 
+.deal-container {
+    width: 428px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 285px;
+}
+
+.deal-img {
+    margin-right: 309px;
+}
+
+/* ✅ MOBILE STYLES */
 @media screen and (max-width: 576px) {
-
-
-
 
     .header {
         flex-direction: column;
@@ -243,7 +228,6 @@
         height: auto;
         max-width: 335px;
         margin: 0 auto;
-        /* margin-bottom: 50px; */
     }
 
     #flower-image-bg1,
@@ -255,8 +239,6 @@
         padding: 30px 0;
         margin-bottom: 20px;
         border-radius: 216px 216px 0 0;
-
-
     }
 
     #flower-img1,
@@ -276,16 +258,65 @@
         gap: 20px;
         width: 100%;
         height: auto;
+        max-width: 380px;
+        margin: 0 auto 30px;
         padding: 20px;
     }
 
-    .service-container {
-        width: 100%;
-    }
+    /* .service {
+    width: 100%;
+    max-width: 1036px;
+    height: 230px;
+    margin: 0 auto 93px;
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
 
     .primary-button {
         width: 100%;
         max-width: 200px;
         margin: 10px auto;
+    }
+
+    /* DEAL SECTION */
+    .deal {
+        /* width: 100%; */
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin: 0 auto 30px;
+    }
+
+    /* .deal {
+    width: 100%;
+    height: 445px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(229, 84, 115, 0.05);
+} */
+
+    .deal-container {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .deal-img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 15px;
+        height: auto;
+        display: block;
     }
 }
